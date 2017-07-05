@@ -77,9 +77,11 @@
             obj.con="";
             obj.result=false;
             obj.id=maxid(s.arr.son);
-            if(s.arr.son[s.arr.son.length-1].con==""){
-                return;
-            }
+            // var arr=typeof s.arr.son[s.arr.son.length-1].con==undefined ?"":"1";
+            // console.log(arr);
+            // if(arr==""){
+            //     return;
+            // }
             s.arr.son.push(obj);
             for(var i=0;i<s.data.length;i++){
                 if (s.data[i].id==s.arr.id){
